@@ -1,12 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+		<link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>Troy University</nav>
+		<p>
+			<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+				Link with href
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample">
+			<div class="card card-body">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+			</div>
+		</div>
+    <div class="container">
+      <h1>Faculty/Staff as</h1>
+			<button id="meetBtn">Meet our instructor</button>
+			<div class="row">
+				<div class="col-2"></div>
+				<table id="table" class="table col-9 borderless ">
+					<thead>
+						<tr class="text-center">
+							<th scope="col" class="avatar-col">Avatar</th>
+							<th scope="col">Bio</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- zhong -->
+						<tr>
+							<td class="avatar-col">
+								<img class="avatar" src="./resources/pictures/billzhong.jfif" alt="">
+								<h5 class="text-center">Dr. Bill Zhong</h5>
+							</td>
+							<td class="bio align-middle">
+								<h5>Department Chair and Associate Professor
+									Troy University</h5>
+								<p>
+									Office: 128 McCall Hall (MSCX) Troy, AL 36082<br/>
+									Email: jzhong@troy.edu<br/>
+									Telephone: 1-334-670-3388
+									<br/>Fax: 1-334-670-3729
+								</p>
+							</td>
+						</tr>
+						<!-- arteta -->
+						<tr>
+							<td class="avatar-col">
+								<img class="avatar" src="./resources/pictures/arteta.jfif" alt="">
+								<h5 class="text-center">Dr. Alberto Arteta</h5>
+							</td>
+							<td class="bio align-middle">
+								<h5>Assistant Professor</h5>
+								<p>
+									Office: 321B McCall Hall (MSCX)
+									Troy, AL 36082<br/>
+									Email: aarteta@troy.edu<br/>
+									Telephone: 1-334-670-3409
+									<br/>Fax: 1-334-670-3729
+								</p>
+							</td>
+						</tr>
+						<!-- Long Ma  -->
+						<tr>
+							<td class="avatar-col">
+								<img class="avatar" src="./resources/pictures/longma.jfif" alt="">
+								<h5 class="text-center">Dr. Long Ma</h5>
+							</td>
+							<td class="bio align-middle">
+								<h5>Assistant Professor</h5>
+								<p>
+									Office: 321D McCall Hall (MSCX)
+									Troy, AL 36082<br/>
+									Email: lma@troy.edu<br/>
+									Telephone: 1-334-670-3409
+									<br/>Fax: 1-334-808-6565
+								</p>
+							</td>
+						</tr>
+						<!-- Kumar -->
+						<tr>
+							<td class="avatar-col">
+								<img class="avatar" src="./resources/pictures/sumankumar.jpg" alt="">
+								<h5 class="text-center">Dr. Suman Kumar</h5>
+							</td>
+							<td class="bio align-middle">
+								<h5>Assistant Professor</h5>
+								<p>
+									Office: 321C McCall Hall (MSCX)
+									Troy, AL 36082<br/>
+									Email: skumar@troy.edu<br/>
+									Telephone: 1-334-670-5844
+									<br/>Fax: 1-334-670-3729
+								</p>
+							</td>
+						</tr>
+						<!-- zhao -->
+						<tr>
+							<td class="avatar-col">
+								<img class="avatar" src="./resources/pictures/yanjunzhao.jfif" alt="">
+								<h5 class="text-center">Dr. Yanjun Zhao</h5>
+							</td>
+							<td class="bio align-middle">
+								<h5>Assistant Professor</h5>
+								<p>
+									Office: 321A McCall Hall (MSCX)
+									Troy, AL 36082<br/>
+									Email: yjzhao@troy.edu<br/>
+									Telephone: 1-334-670-3405
+									<br/>Fax: 1-334-670-3729
+								</p>
+							</td>
+						</tr>
+						<!-- Chang -->
+						<tr>
+							<td class="avatar-col">
+								<img class="avatar" src="./resources/pictures/chang.jfif" alt="">
+								<h5 class="text-center">Dr. Hyung Jae (Chris) Chang</h5>
+							</td>
+							<td class="bio align-middle">
+								<h5>Assistant Professor</h5>
+								<p>
+									Office: 321A McCall Hall (MSCX)
+									Troy, AL 36082<br/>
+									Email: hjchang@troy.edu<br/>
+									Telephone: 1-334-241-5474
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- New section -->
+			<h2>Courses</h2>
+			<ul>
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs2250" class="header">+ CS 2250 Computer Science I </div>
+						<div id="cs2250Content" class="content">An introduction to the theory and development aspects of a high-level programming language. The course covers programming methodologies, control structures, predefined and user defined functions, input/output streams, control structures, logical expressions, enumeration, repetition, multidimensional array and string manipulation, structures, searching, sorting techniques, and advanced input/output. Program analysis, design, development, and testing are emphasized. Prerequisite: MTH 1112.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs2255" class="header">+ CS 2255 Computer Science II </div>
+						<div id="cs2255Content" class="content">A continuation of Computer Science I to include advanced programming techniques including classes and data abstractions, inheritance and composition, pointers, virtual functions, overloading, exception handling, and recursion. Students analyze, design, implement, and test complex programs. Prerequisite: CS 2250.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs3310" class="header">+ CS 3310 Foundations of Computer Science</div>
+						<div id="cs3310Content" class="content">A broad perspective of computer science concepts intended as preparation for more in-depth coverage in higher-level courses. Topics include machine and assembly language programming, computer system organization and operation, logic circuits, finitestate diagrams and programming language grammar, Boolean algebra, and circuit design considerations. Prerequisite: MTH 1112.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs3330" class="header">+ CS 3330 Data Structures and Algorithms </div>
+						<div id="cs3330Content" class="content">A course in fundamental data structures concepts and alternative techniques for solving real-world problems in computer science. Concepts and application covered include analysis of data representation and associated algorithms, including linked lists, queues, stacks, arrays, graphs, trees, searching, sorting, string matching, and the application of recursive techniques. The course will place an emphasis on the implementation of various algorithms and data structures. Prerequisites: CS 2255, MTH 2201, 2215.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs3331" class="header">+ CS 3331 Fundamentals of Artificial Intelligence  </div>
+						<div id="cs3331Content" class="content">Approaches to the definition of artificial intelligence and to the design and implementation of intelligent computer systems. Topics include the Turing Test, Sourly; Chinese Room, blackboard systems, logic programming, knowledge based systems, scripts and schemas, and heuristic search techniques. Prerequisite: CS 3323 or 3330.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs3332" class="header">+ CS 3332 Software Engineering I  </div>
+						<div id="cs3332Content" class="content">Topics are presented that focus on the design and development techniques for large high quality software systems. They include project management issues, analysis and design methods, and approaches to testing. Prerequisite: CS 3323 or 3330.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs3333" class="header">+ CS 3333 Introduction to Cryptography   </div>
+						<div id="cs3333Content" class="content">Discussion of mathematical foundations to the theory of cryptography. Topics include information theory, number theory, cryptographic protocols and various algorithms. Prerequisite: MTH 1125.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs3360" class="header">+ CS 3360 Concepts of Object Oriented Programming    </div>
+						<div id="cs3360Content" class="content">Provides students the opportunity to gain experience and training in an additional high level language. The course focuses on advanced topics including classes, objects, interfaces, applications, encapsulation, exceptions, multithreading, graphics, exception handling, files, and streaming. Prerequisite: CS 2255.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs3365" class="header">+ CS 3365 Introduction to Computer Organization and Architecture    </div>
+						<div id="cs3365Content" class="content">Organization and operation of computer systems. Topics include hardware components of digital computers, micro-programming, memory management, interrupt organization, addressing modes, and instruction formats. Prerequisite: CS 3310.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs3370" class="header">+ CS 3370 Nature of Programming Languages    </div>
+						<div id="cs3370Content" class="content">Basic principles and concepts of programming languages including what a programming language is, various paradigms that a language can follow, and how its syntactical and semantic structures can be specified. The traditional object-oriented nontraditional paradigms based on symbolic logic (logic programming) and on functions in lambda calculus (functional programming). Prerequisite: CS 3323 or 3330.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs3372" class="header">+ CS 3372 Formal Languages and the Theory of Computation    </div>
+						<div id="cs3372Content" class="content">	
+							Formal language theory, including the Chomsky hierarchy, is presented. Emphasis is placed on regular and context free grammars, finite state automata, and translators. Prerequisite: CS 3323 or 3330.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs4420" class="header">+ CS 4420 Introduction to Database Systems     </div>
+						<div id="cs4420Content" class="content">	
+							The fundamental concepts and structures necessary for the design and implementation of a database management system. Students design, load, and query a database using tools such as E-R diagrams and SQL. Also includes data normalization and file and index organization. Prerequisite: CS 3323 or 3330.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs4445" class="header">+ CS 4445 Data Communication and Networking     </div>
+						<div id="cs4445Content" class="content">	
+							An overview of local-area and wide-area systems. Issues discussed include standards, topologies, management, communication protocols, and security. Prerequisite: CS 3323 or 3330. Students majoring in Applied Computer Science or in the Computer Science Program may not apply this course to the Cyber Security minor or certificate.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs4443" class="header">+ CS 4443 Web-Based Software Development     </div>
+						<div id="cs4443Content" class="content">	
+							The essentials of Internet programming. Students will design and write Web page applications utilizing Internet programming techniques including scripting languages and hypertext. Programs will manipulate many forms of data including hypertext, graphics, audio, and video. Students use state-of-the-art development tools and design methods to implement an enterprise web application. Prerequisite: CS 3323 or 3330.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="course-list-item box-shadow">
+						<div id="cs4448" class="header">+ CS 4448 Operating Systems     </div>
+						<div id="cs4448Content" class="content">	
+								
+An overview of operating system functions and components. Issues include process definition, scheduling, and memory management. Various modern operating systems are compared. Prerequisite: CS 3323 or 3330.</div>
+					</div>
+				</li>
+
+				
+
+			</ul>
+			<h1>Form</h1>
+
+
+  </body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		let listItems = ["cs2250", "cs2255", "cs3310", "cs3330" , "cs3331", "cs3332", "cs3333", "cs3360", "cs3365", "cs3370", "cs3372", "cs4420", "cs4445", "cs4443", "cs4448"];
+		let listItemsId = [];
+		listItems.forEach(function(element) {
+			listItemsId.push("#"+element);
+		})
+
+		$(document).ready(function() {
+			// Hide all the courses
+			listItemsId.forEach(function(element) {
+				var itemId = element + "Content";
+				$(itemId).hide();
+			})
+
+			
+		})
+
+		// Add click event that toggle the clicked course content
+		listItemsId.forEach(function(element) {
+			$(element).click(function() {
+				var contentId = element + "Content";
+				$(contentId).slideToggle("slow");
+			})
+
+			$("#table").hide();
+		})
+
+		$("#meetBtn").click(function() {
+				$("#table").slideToggle(300);
+			})
+	</script>
 </html>

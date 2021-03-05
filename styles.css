@@ -1,0 +1,84 @@
+* {
+  transition: border 200ms linear;
+}
+
+#table {
+  min-width: 600px;
+  max-width: 900;
+}
+
+ul {
+  list-style: none;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-100 {
+  width: 100%;
+}
+#table {
+    color: #fafafa;
+    background-color: #910039;
+}
+.avatar-col {
+  width: 28%;
+  
+}
+
+.avatar {
+  width: 100%;
+  /* for desktop is 200 */
+  border-radius: 5px;
+  height: 250px;
+  border: 2px solid #fafafa;
+  margin: 0 auto;
+}
+.bio {
+  height: 100%;
+  /*border: 1px solid blue;*/
+  border-radius: 5px;
+}
+.bio h5 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  /*line-height: 1.4rem;*/
+}
+
+.bio p {
+  font-size: 1.05rem;
+}
+
+.course-list-item {
+  border: 2px solid #dbe4ee;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #c9ced6;
+}
+
+.course-list-item .header {
+  font-size: 1.4rem;
+  font-weight: 700;
+
+}
+
+.course-list-item .content {
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: white;
+  }
+  
+  .course-list-item:hover {
+    border: 2px solid #be0611;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+.box-shadow {
+  -webkit-box-shadow: 3px 7px 2px 0px rgba(176, 176, 176, 0.84);
+  box-shadow: 3px 7px 2px 0px rgba(176, 176, 176, 0.84);
+}
