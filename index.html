@@ -14,16 +14,23 @@
     />
   </head>
   <body class="pb-4">
-    <nav>Troy University</nav>
+		<div class="topnav">
+			<a class="mr-4 active" href="#home">Troy Univeristy</a>
+			<a href="#faculty">Faculty</a>
+			<a href="#courses">Courses</a>
+			<a href="#apply">Form</a>
+			<a href="#abtus">About Us</a>
+		</div>
+
     <div class="main pb-4">
-      <h2 class="mb-2 troy-header">Faculty/Staff</h2>
+      <h2 id="faculty" class="mb-2 troy-header" style="margin-top:80px">Faculty/Staff</h2>
 			<hr/>
 			<div class="row">
 				<p class="col-10 offset-1 intro-p">Students in the MSCS graduate program have the opportunity to specialize in a research area of interest under the guidance of a faculty composed of preeminent scholar-professors with international reputations.</p>
 			</div>
 		<!-- Hero section -->
 			<div id="heroSection" class="row mb-1 mx-auto">
-				<img id="team" src="./resources/pictures/meet.jpg" class="box-shadow"/>
+				<img id="team" src="./resources/pictures/teacher.png" class="box-shadow"/>
 				<button id="meetBtn">Meet Our Professors</button>
 			</div>
 			<div class="row">
@@ -140,8 +147,9 @@
 					</tbody>
 				</table>
 			</div>
+
 			<!-- New section -->
-			<h2 class="mt-3 mb-2 troy-header">Courses</h2>
+			<h2 id="courses" class="mt-3 mb-2 troy-header">Courses</h2>
 			<hr>
 			<div class="row">
 				<p class="col-10 offset-1 intro-p">The computer science degree program provides students with a curriculum in the key domains of computer science. The program equips students with computer science knowledge and skills while preparing them for careers in computer technology and for advanced study in graduate courses</p>
@@ -263,7 +271,7 @@ An overview of operating system functions and components. Issues include process
 			</ul>
 
 		<!-- Form -->
-			<h1 class="mt-3 mb-2 troy-header">Interested in Applying to TROY?</h1>
+			<h2 id="apply" class="mt-3 mb-2 troy-header">Interested in Applying to TROY?</h2>
 			<hr>
 			<div class="row">
 				<p class="col-10 offset-1 intro-p">Thank you for your interest in the opportunities that TROY has waiting for you. Qualified applicants are encouraged to apply to the Troy University location of their choosing, including full degree completion online. Applicants should be aware that TROY operates on a number of campuses and sites so it is important that you are specific when indicating your choice of a location. Select the category below that best fits you.</p>
@@ -325,11 +333,26 @@ An overview of operating system functions and components. Issues include process
 			</form>
 
 			<!-- About us -->
-			<h1 class="mt-3 mb-2 troy-header">About us</h1>
+			<h1 id="abtus" class="mt-3 mb-2 troy-header">About us</h1>
 			<hr>
-			<div class="row">
+			<!--<div class="row">
 				<p class="col-10 offset-1 intro-p mb-2">From award-winning academic opportunities to exciting Division I athletics events, Troy University provides students around the globe with top-notch learning opportunities—in class and online. For 15 consecutive years, TROY has been named to The Princeton Review’s “Best in the Southeast” list.</p>
+			</div>-->
+			<div class="row">
+				<div class="about-us col-sm-12 col-md-6 box-shadow">
+					<div class="email-me">
+						<button id="email-btn" class="btn btn-primary btn-block col-4 mx-auto offset-2 " style="margin-top: 30%">Email Me</button>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-5 col-lg-5 offset-1" id="about-us-p">
+					<h4 class="mb-3 mt-1">What is Computer Science Program</h4>
+					<p >The Computer Science program provides students with a curriculum in the MSCS key domains of Computer Science at the undergraduate and graduate levels.  </p>
+					<p>The undergraduate program gives students the full breadth of undergraduate computer science knowledge and skills while preparing them for careers in computer technology and for advanced study in graduate education.</p>
+					<h4 class="mb-3 mt-3">Why Choose Computer Science</h4>
+					<p>The enormous growth of current and emerging technologies has generated a need for graduates with Computer Science degrees. Students graduating from Troy University's undergraduate and graduate programs are prepared to work in a wide range of computing careers, including software engineers, system analysts, computer system designers, or computer programmers</p>
+				</div>
 			</div>
+			
 
   </body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -365,6 +388,10 @@ An overview of operating system functions and components. Issues include process
 		$("#submitButton").click(function() {
 			let mesg = " Thank you for your submission\n Your Profile will be reviewed by the Troy Addmission Department";
 			alert(mesg)
+		})
+
+		$("#email-btn").click(function() {
+			window.location.href = "mailto:emailhelp@troy.edu.com?subject=Subject&body=I%Want%ToSubScribe"; 
 		})
 
 	</script>
