@@ -552,62 +552,62 @@
         This website is created By Bao Tran and licensed by the MIT
       </div>
     </footer>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    let listItems = [
-      "cs2250",
-      "cs2255",
-      "cs3310",
-      "cs3330",
-      "cs3331",
-      "cs3332",
-      "cs3333",
-      "cs3360",
-      "cs3365",
-      "cs3370",
-      "cs3372",
-      "cs4420",
-      "cs4445",
-      "cs4443",
-      "cs4448",
-    ];
-    let listItemsId = [];
-    listItems.forEach(function (element) {
-      listItemsId.push("#" + element);
-    });
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      let listItems = [
+        "cs2250",
+        "cs2255",
+        "cs3310",
+        "cs3330",
+        "cs3331",
+        "cs3332",
+        "cs3333",
+        "cs3360",
+        "cs3365",
+        "cs3370",
+        "cs3372",
+        "cs4420",
+        "cs4445",
+        "cs4443",
+        "cs4448",
+      ];
+      let listItemsId = [];
+      listItems.forEach(function (element) {
+        listItemsId.push("#" + element);
+      });
 
-    $(document).ready(function () {
-      // Hide all the courses
+      $(document).ready(function () {
+        // Hide all the courses
+        listItemsId.forEach(function (element) {
+          var itemId = element + "Content";
+          $(itemId).hide();
+        });
+      });
+
+      // Add click event that toggle the clicked course content
       listItemsId.forEach(function (element) {
-        var itemId = element + "Content";
-        $(itemId).hide();
-      });
-    });
+        $(element).click(function () {
+          var contentId = element + "Content";
+          $(contentId).slideToggle("slow");
+        });
 
-    // Add click event that toggle the clicked course content
-    listItemsId.forEach(function (element) {
-      $(element).click(function () {
-        var contentId = element + "Content";
-        $(contentId).slideToggle("slow");
+        $("#table").hide();
       });
 
-      $("#table").hide();
-    });
+      $("#meetBtn").click(function () {
+        $("#table").slideToggle(300);
+      });
 
-    $("#meetBtn").click(function () {
-      $("#table").slideToggle(300);
-    });
+      $("#submitButton").click(function () {
+        let mesg =
+          " Thank you for your submission\n Your Profile will be reviewed by the Troy Addmission Department";
+        alert(mesg);
+      });
 
-    $("#submitButton").click(function () {
-      let mesg =
-        " Thank you for your submission\n Your Profile will be reviewed by the Troy Addmission Department";
-      alert(mesg);
-    });
-
-    $("#email-btn").click(function () {
-      window.location.href =
-        "mailto:emailhelp@troy.edu.com?subject=Subject&body=I%Want%ToSubScribe";
-    });
-  </script>
+      $("#email-btn").click(function () {
+        window.location.href =
+          "mailto:emailhelp@troy.edu.com?subject=Subject&body=I%Want%ToSubScribe";
+      });
+    </script>
+  </body>
 </html>
