@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-		<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,385 +14,600 @@
     />
   </head>
   <body class="pb-4">
-		<div class="topnav">
-			<a class="mr-4 active" href="#home">Troy Univeristy</a>
-			<a href="#faculty">Faculty</a>
-			<a href="#courses">Courses</a>
-			<a href="#apply">Form</a>
-			<a href="#abtus">About Us</a>
-		</div>
+    <!-- top navigation -->
+    <div class="topnav">
+      <a class="mr-4 active" href="#home">Troy Univeristy</a>
+      <a href="#faculty">Faculty</a>
+      <a href="#courses">Courses</a>
+      <a href="#apply">Form</a>
+      <a href="#abtus">About Us</a>
+    </div>
 
+    <!-- Main page -->
     <div class="main pb-4">
-      <h2 id="faculty" class="mb-2 troy-header" style="margin-top:80px">Faculty/Staff</h2>
-			<hr/>
-			<div class="row">
-				<p class="col-10 offset-1 intro-p">Students in the MSCS graduate program have the opportunity to specialize in a research area of interest under the guidance of a faculty composed of preeminent scholar-professors with international reputations.</p>
-			</div>
-		<!-- Hero section -->
-			<div id="heroSection" class="row mb-1 mx-auto">
-				<img id="team" src="./resources/pictures/teacher.png" class="box-shadow"/>
-				<button id="meetBtn">Meet Our Professors</button>
-			</div>
-			<div class="row">
-				<!-- Table of professors -->
-				<table id="table" class="table borderless box-shadow">
-					<thead>
-						<tr class="text-center">
-							<th scope="col" class="avatar-col">Avatar</th>
-							<th scope="col">Biography</th>
-						</tr>
-					</thead>
-					<tbody>
-						<!-- zhong -->
-						<tr>
-							<td class="avatar-col">
-								<img class="avatar" src="./resources/pictures/billzhong.jfif" alt="">
-								<h5 class="text-center">Dr. Bill Zhong</h5>
-							</td>
-							<td class="bio align-middle">
-								<h5>Department Chair and Associate Professor
-									Troy University</h5>
-								<p>
-									Office: 128 McCall Hall (MSCX) Troy, AL 36082<br/>
-									Email: jzhong@troy.edu<br/>
-									Telephone: 1-334-670-3388
-									<br/>Fax: 1-334-670-3729
-								</p>
-							</td>
-						</tr>
-						<!-- arteta -->
-						<tr>
-							<td class="avatar-col">
-								<img class="avatar" src="./resources/pictures/arteta.jfif" alt="">
-								<h5 class="text-center">Dr. Alberto Arteta</h5>
-							</td>
-							<td class="bio align-middle">
-								<h5>Assistant Professor</h5>
-								<p>
-									Office: 321B McCall Hall (MSCX)
-									Troy, AL 36082<br/>
-									Email: aarteta@troy.edu<br/>
-									Telephone: 1-334-670-3409
-									<br/>Fax: 1-334-670-3729
-								</p>
-							</td>
-						</tr>
-						<!-- Long Ma  -->
-						<tr>
-							<td class="avatar-col">
-								<img class="avatar" src="./resources/pictures/longma.jfif" alt="">
-								<h5 class="text-center">Dr. Long Ma</h5>
-							</td>
-							<td class="bio align-middle">
-								<h5>Assistant Professor</h5>
-								<p>
-									Office: 321D McCall Hall (MSCX)
-									Troy, AL 36082<br/>
-									Email: lma@troy.edu<br/>
-									Telephone: 1-334-670-3409
-									<br/>Fax: 1-334-808-6565
-								</p>
-							</td>
-						</tr>
-						<!-- Kumar -->
-						<tr>
-							<td class="avatar-col">
-								<img class="avatar" src="./resources/pictures/sumankumar.jpg" alt="">
-								<h5 class="text-center">Dr. Suman Kumar</h5>
-							</td>
-							<td class="bio align-middle">
-								<h5>Assistant Professor</h5>
-								<p>
-									Office: 321C McCall Hall (MSCX)
-									Troy, AL 36082<br/>
-									Email: skumar@troy.edu<br/>
-									Telephone: 1-334-670-5844
-									<br/>Fax: 1-334-670-3729
-								</p>
-							</td>
-						</tr>
-						<!-- zhao -->
-						<tr>
-							<td class="avatar-col">
-								<img class="avatar" src="./resources/pictures/yanjunzhao.jfif" alt="">
-								<h5 class="text-center">Dr. Yanjun Zhao</h5>
-							</td>
-							<td class="bio align-middle">
-								<h5>Assistant Professor</h5>
-								<p>
-									Office: 321A McCall Hall (MSCX)
-									Troy, AL 36082<br/>
-									Email: yjzhao@troy.edu<br/>
-									Telephone: 1-334-670-3405
-									<br/>Fax: 1-334-670-3729
-								</p>
-							</td>
-						</tr>
-						<!-- Chang -->
-						<tr>
-							<td class="avatar-col">
-								<img class="avatar" src="./resources/pictures/chang.jfif" alt="">
-								<h5 class="text-center">Dr. Hyung Jae (Chris) Chang</h5>
-							</td>
-							<td class="bio align-middle">
-								<h5>Assistant Professor</h5>
-								<p>
-									Office: 321A McCall Hall (MSCX)
-									Troy, AL 36082<br/>
-									Email: hjchang@troy.edu<br/>
-									Telephone: 1-334-241-5474
-								</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+      <!-- Faculty -->
+      <h2 id="faculty" class="mb-2 troy-header" style="margin-top: 80px">
+        Faculty/Staff
+      </h2>
+      <hr />
+      <div class="row">
+        <p class="col-10 offset-1 intro-p">
+          Students in the MSCS graduate program have the opportunity to
+          specialize in a research area of interest under the guidance of a
+          faculty composed of preeminent scholar-professors with international
+          reputations.
+        </p>
+      </div>
+      <!-- Hero section -->
+      <div id="heroSection" class="row mb-1 mx-auto">
+        <img
+          id="team"
+          src="./resources/pictures/teacher.png"
+          class="box-shadow"
+        />
+        <button id="meetBtn">Meet Our Professors</button>
+      </div>
+      <div class="row">
+        <!-- Table of professors -->
+        <table id="table" class="table borderless box-shadow">
+          <thead>
+            <tr class="text-center">
+              <th scope="col" class="avatar-col">Avatar</th>
+              <th scope="col">Biography</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- zhong -->
+            <tr>
+              <td class="avatar-col">
+                <img
+                  class="avatar"
+                  src="./resources/pictures/billzhong.jfif"
+                  alt=""
+                />
+                <h5 class="text-center">Dr. Bill Zhong</h5>
+              </td>
+              <td class="bio align-middle">
+                <h5>
+                  Department Chair and Associate Professor Troy University
+                </h5>
+                <p>
+                  Office: 128 McCall Hall (MSCX) Troy, AL 36082<br />
+                  Email: jzhong@troy.edu<br />
+                  Telephone: 1-334-670-3388
+                  <br />Fax: 1-334-670-3729
+                </p>
+              </td>
+            </tr>
+            <!-- arteta -->
+            <tr>
+              <td class="avatar-col">
+                <img
+                  class="avatar"
+                  src="./resources/pictures/arteta.jfif"
+                  alt=""
+                />
+                <h5 class="text-center">Dr. Alberto Arteta</h5>
+              </td>
+              <td class="bio align-middle">
+                <h5>Assistant Professor</h5>
+                <p>
+                  Office: 321B McCall Hall (MSCX) Troy, AL 36082<br />
+                  Email: aarteta@troy.edu<br />
+                  Telephone: 1-334-670-3409
+                  <br />Fax: 1-334-670-3729
+                </p>
+              </td>
+            </tr>
+            <!-- Long Ma  -->
+            <tr>
+              <td class="avatar-col">
+                <img
+                  class="avatar"
+                  src="./resources/pictures/longma.jfif"
+                  alt=""
+                />
+                <h5 class="text-center">Dr. Long Ma</h5>
+              </td>
+              <td class="bio align-middle">
+                <h5>Assistant Professor</h5>
+                <p>
+                  Office: 321D McCall Hall (MSCX) Troy, AL 36082<br />
+                  Email: lma@troy.edu<br />
+                  Telephone: 1-334-670-3409
+                  <br />Fax: 1-334-808-6565
+                </p>
+              </td>
+            </tr>
+            <!-- Kumar -->
+            <tr>
+              <td class="avatar-col">
+                <img
+                  class="avatar"
+                  src="./resources/pictures/sumankumar.jpg"
+                  alt=""
+                />
+                <h5 class="text-center">Dr. Suman Kumar</h5>
+              </td>
+              <td class="bio align-middle">
+                <h5>Assistant Professor</h5>
+                <p>
+                  Office: 321C McCall Hall (MSCX) Troy, AL 36082<br />
+                  Email: skumar@troy.edu<br />
+                  Telephone: 1-334-670-5844
+                  <br />Fax: 1-334-670-3729
+                </p>
+              </td>
+            </tr>
+            <!-- zhao -->
+            <tr>
+              <td class="avatar-col">
+                <img
+                  class="avatar"
+                  src="./resources/pictures/yanjunzhao.jfif"
+                  alt=""
+                />
+                <h5 class="text-center">Dr. Yanjun Zhao</h5>
+              </td>
+              <td class="bio align-middle">
+                <h5>Assistant Professor</h5>
+                <p>
+                  Office: 321A McCall Hall (MSCX) Troy, AL 36082<br />
+                  Email: yjzhao@troy.edu<br />
+                  Telephone: 1-334-670-3405
+                  <br />Fax: 1-334-670-3729
+                </p>
+              </td>
+            </tr>
+            <!-- Chang -->
+            <tr>
+              <td class="avatar-col">
+                <img
+                  class="avatar"
+                  src="./resources/pictures/chang.jfif"
+                  alt=""
+                />
+                <h5 class="text-center">Dr. Hyung Jae (Chris) Chang</h5>
+              </td>
+              <td class="bio align-middle">
+                <h5>Assistant Professor</h5>
+                <p>
+                  Office: 321A McCall Hall (MSCX) Troy, AL 36082<br />
+                  Email: hjchang@troy.edu<br />
+                  Telephone: 1-334-241-5474
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-			<!-- New section -->
-			<h2 id="courses" class="mt-3 mb-2 troy-header">Courses</h2>
-			<hr>
-			<div class="row">
-				<p class="col-10 offset-1 intro-p">The computer science degree program provides students with a curriculum in the key domains of computer science. The program equips students with computer science knowledge and skills while preparing them for careers in computer technology and for advanced study in graduate courses</p>
-			</div>
-			<ul>
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs2250" class="header">+ CS 2250 Computer Science I </div>
-						<div id="cs2250Content" class="content">An introduction to the theory and development aspects of a high-level programming language. The course covers programming methodologies, control structures, predefined and user defined functions, input/output streams, control structures, logical expressions, enumeration, repetition, multidimensional array and string manipulation, structures, searching, sorting techniques, and advanced input/output. Program analysis, design, development, and testing are emphasized. Prerequisite: MTH 1112.</div>
-					</div>
-				</li>
+      <!-- New section -->
+      <h2 id="courses" class="mt-3 mb-2 troy-header">Courses</h2>
+      <hr />
+      <div class="row">
+        <p class="col-10 offset-1 intro-p">
+          The computer science degree program provides students with a
+          curriculum in the key domains of computer science. The program equips
+          students with computer science knowledge and skills while preparing
+          them for careers in computer technology and for advanced study in
+          graduate courses
+        </p>
+      </div>
+      <ul>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs2250" class="header">+ CS 2250 Computer Science I</div>
+            <div id="cs2250Content" class="content">
+              An introduction to the theory and development aspects of a
+              high-level programming language. The course covers programming
+              methodologies, control structures, predefined and user defined
+              functions, input/output streams, control structures, logical
+              expressions, enumeration, repetition, multidimensional array and
+              string manipulation, structures, searching, sorting techniques,
+              and advanced input/output. Program analysis, design, development,
+              and testing are emphasized. Prerequisite: MTH 1112.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs2255" class="header">+ CS 2255 Computer Science II </div>
-						<div id="cs2255Content" class="content">A continuation of Computer Science I to include advanced programming techniques including classes and data abstractions, inheritance and composition, pointers, virtual functions, overloading, exception handling, and recursion. Students analyze, design, implement, and test complex programs. Prerequisite: CS 2250.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs2255" class="header">+ CS 2255 Computer Science II</div>
+            <div id="cs2255Content" class="content">
+              A continuation of Computer Science I to include advanced
+              programming techniques including classes and data abstractions,
+              inheritance and composition, pointers, virtual functions,
+              overloading, exception handling, and recursion. Students analyze,
+              design, implement, and test complex programs. Prerequisite: CS
+              2250.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs3310" class="header">+ CS 3310 Foundations of Computer Science</div>
-						<div id="cs3310Content" class="content">A broad perspective of computer science concepts intended as preparation for more in-depth coverage in higher-level courses. Topics include machine and assembly language programming, computer system organization and operation, logic circuits, finitestate diagrams and programming language grammar, Boolean algebra, and circuit design considerations. Prerequisite: MTH 1112.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs3310" class="header">
+              + CS 3310 Foundations of Computer Science
+            </div>
+            <div id="cs3310Content" class="content">
+              A broad perspective of computer science concepts intended as
+              preparation for more in-depth coverage in higher-level courses.
+              Topics include machine and assembly language programming, computer
+              system organization and operation, logic circuits, finitestate
+              diagrams and programming language grammar, Boolean algebra, and
+              circuit design considerations. Prerequisite: MTH 1112.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs3330" class="header">+ CS 3330 Data Structures and Algorithms </div>
-						<div id="cs3330Content" class="content">A course in fundamental data structures concepts and alternative techniques for solving real-world problems in computer science. Concepts and application covered include analysis of data representation and associated algorithms, including linked lists, queues, stacks, arrays, graphs, trees, searching, sorting, string matching, and the application of recursive techniques. The course will place an emphasis on the implementation of various algorithms and data structures. Prerequisites: CS 2255, MTH 2201, 2215.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs3330" class="header">
+              + CS 3330 Data Structures and Algorithms
+            </div>
+            <div id="cs3330Content" class="content">
+              A course in fundamental data structures concepts and alternative
+              techniques for solving real-world problems in computer science.
+              Concepts and application covered include analysis of data
+              representation and associated algorithms, including linked lists,
+              queues, stacks, arrays, graphs, trees, searching, sorting, string
+              matching, and the application of recursive techniques. The course
+              will place an emphasis on the implementation of various algorithms
+              and data structures. Prerequisites: CS 2255, MTH 2201, 2215.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs3331" class="header">+ CS 3331 Fundamentals of Artificial Intelligence  </div>
-						<div id="cs3331Content" class="content">Approaches to the definition of artificial intelligence and to the design and implementation of intelligent computer systems. Topics include the Turing Test, Sourly; Chinese Room, blackboard systems, logic programming, knowledge based systems, scripts and schemas, and heuristic search techniques. Prerequisite: CS 3323 or 3330.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs3331" class="header">
+              + CS 3331 Fundamentals of Artificial Intelligence
+            </div>
+            <div id="cs3331Content" class="content">
+              Approaches to the definition of artificial intelligence and to the
+              design and implementation of intelligent computer systems. Topics
+              include the Turing Test, Sourly; Chinese Room, blackboard systems,
+              logic programming, knowledge based systems, scripts and schemas,
+              and heuristic search techniques. Prerequisite: CS 3323 or 3330.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs3332" class="header">+ CS 3332 Software Engineering I  </div>
-						<div id="cs3332Content" class="content">Topics are presented that focus on the design and development techniques for large high quality software systems. They include project management issues, analysis and design methods, and approaches to testing. Prerequisite: CS 3323 or 3330.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs3332" class="header">
+              + CS 3332 Software Engineering I
+            </div>
+            <div id="cs3332Content" class="content">
+              Topics are presented that focus on the design and development
+              techniques for large high quality software systems. They include
+              project management issues, analysis and design methods, and
+              approaches to testing. Prerequisite: CS 3323 or 3330.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs3333" class="header">+ CS 3333 Introduction to Cryptography   </div>
-						<div id="cs3333Content" class="content">Discussion of mathematical foundations to the theory of cryptography. Topics include information theory, number theory, cryptographic protocols and various algorithms. Prerequisite: MTH 1125.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs3333" class="header">
+              + CS 3333 Introduction to Cryptography
+            </div>
+            <div id="cs3333Content" class="content">
+              Discussion of mathematical foundations to the theory of
+              cryptography. Topics include information theory, number theory,
+              cryptographic protocols and various algorithms. Prerequisite: MTH
+              1125.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs3360" class="header">+ CS 3360 Concepts of Object Oriented Programming    </div>
-						<div id="cs3360Content" class="content">Provides students the opportunity to gain experience and training in an additional high level language. The course focuses on advanced topics including classes, objects, interfaces, applications, encapsulation, exceptions, multithreading, graphics, exception handling, files, and streaming. Prerequisite: CS 2255.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs3360" class="header">
+              + CS 3360 Concepts of Object Oriented Programming
+            </div>
+            <div id="cs3360Content" class="content">
+              Provides students the opportunity to gain experience and training
+              in an additional high level language. The course focuses on
+              advanced topics including classes, objects, interfaces,
+              applications, encapsulation, exceptions, multithreading, graphics,
+              exception handling, files, and streaming. Prerequisite: CS 2255.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs3365" class="header">+ CS 3365 Introduction to Computer Organization and Architecture    </div>
-						<div id="cs3365Content" class="content">Organization and operation of computer systems. Topics include hardware components of digital computers, micro-programming, memory management, interrupt organization, addressing modes, and instruction formats. Prerequisite: CS 3310.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs3365" class="header">
+              + CS 3365 Introduction to Computer Organization and Architecture
+            </div>
+            <div id="cs3365Content" class="content">
+              Organization and operation of computer systems. Topics include
+              hardware components of digital computers, micro-programming,
+              memory management, interrupt organization, addressing modes, and
+              instruction formats. Prerequisite: CS 3310.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs3370" class="header">+ CS 3370 Nature of Programming Languages    </div>
-						<div id="cs3370Content" class="content">Basic principles and concepts of programming languages including what a programming language is, various paradigms that a language can follow, and how its syntactical and semantic structures can be specified. The traditional object-oriented nontraditional paradigms based on symbolic logic (logic programming) and on functions in lambda calculus (functional programming). Prerequisite: CS 3323 or 3330.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs3370" class="header">
+              + CS 3370 Nature of Programming Languages
+            </div>
+            <div id="cs3370Content" class="content">
+              Basic principles and concepts of programming languages including
+              what a programming language is, various paradigms that a language
+              can follow, and how its syntactical and semantic structures can be
+              specified. The traditional object-oriented nontraditional
+              paradigms based on symbolic logic (logic programming) and on
+              functions in lambda calculus (functional programming).
+              Prerequisite: CS 3323 or 3330.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs3372" class="header">+ CS 3372 Formal Languages and the Theory of Computation    </div>
-						<div id="cs3372Content" class="content">	
-							Formal language theory, including the Chomsky hierarchy, is presented. Emphasis is placed on regular and context free grammars, finite state automata, and translators. Prerequisite: CS 3323 or 3330.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs3372" class="header">
+              + CS 3372 Formal Languages and the Theory of Computation
+            </div>
+            <div id="cs3372Content" class="content">
+              Formal language theory, including the Chomsky hierarchy, is
+              presented. Emphasis is placed on regular and context free
+              grammars, finite state automata, and translators. Prerequisite: CS
+              3323 or 3330.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs4420" class="header">+ CS 4420 Introduction to Database Systems     </div>
-						<div id="cs4420Content" class="content">	
-							The fundamental concepts and structures necessary for the design and implementation of a database management system. Students design, load, and query a database using tools such as E-R diagrams and SQL. Also includes data normalization and file and index organization. Prerequisite: CS 3323 or 3330.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs4420" class="header">
+              + CS 4420 Introduction to Database Systems
+            </div>
+            <div id="cs4420Content" class="content">
+              The fundamental concepts and structures necessary for the design
+              and implementation of a database management system. Students
+              design, load, and query a database using tools such as E-R
+              diagrams and SQL. Also includes data normalization and file and
+              index organization. Prerequisite: CS 3323 or 3330.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs4445" class="header">+ CS 4445 Data Communication and Networking     </div>
-						<div id="cs4445Content" class="content">	
-							An overview of local-area and wide-area systems. Issues discussed include standards, topologies, management, communication protocols, and security. Prerequisite: CS 3323 or 3330. Students majoring in Applied Computer Science or in the Computer Science Program may not apply this course to the Cyber Security minor or certificate.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs4445" class="header">
+              + CS 4445 Data Communication and Networking
+            </div>
+            <div id="cs4445Content" class="content">
+              An overview of local-area and wide-area systems. Issues discussed
+              include standards, topologies, management, communication
+              protocols, and security. Prerequisite: CS 3323 or 3330. Students
+              majoring in Applied Computer Science or in the Computer Science
+              Program may not apply this course to the Cyber Security minor or
+              certificate.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs4443" class="header">+ CS 4443 Web-Based Software Development     </div>
-						<div id="cs4443Content" class="content">	
-							The essentials of Internet programming. Students will design and write Web page applications utilizing Internet programming techniques including scripting languages and hypertext. Programs will manipulate many forms of data including hypertext, graphics, audio, and video. Students use state-of-the-art development tools and design methods to implement an enterprise web application. Prerequisite: CS 3323 or 3330.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs4443" class="header">
+              + CS 4443 Web-Based Software Development
+            </div>
+            <div id="cs4443Content" class="content">
+              The essentials of Internet programming. Students will design and
+              write Web page applications utilizing Internet programming
+              techniques including scripting languages and hypertext. Programs
+              will manipulate many forms of data including hypertext, graphics,
+              audio, and video. Students use state-of-the-art development tools
+              and design methods to implement an enterprise web application.
+              Prerequisite: CS 3323 or 3330.
+            </div>
+          </div>
+        </li>
 
-				<li>
-					<div class="course-list-item box-shadow">
-						<div id="cs4448" class="header">+ CS 4448 Operating Systems     </div>
-						<div id="cs4448Content" class="content">	
-								
-An overview of operating system functions and components. Issues include process definition, scheduling, and memory management. Various modern operating systems are compared. Prerequisite: CS 3323 or 3330.</div>
-					</div>
-				</li>
+        <li>
+          <div class="course-list-item box-shadow">
+            <div id="cs4448" class="header">+ CS 4448 Operating Systems</div>
+            <div id="cs4448Content" class="content">
+              An overview of operating system functions and components. Issues
+              include process definition, scheduling, and memory management.
+              Various modern operating systems are compared. Prerequisite: CS
+              3323 or 3330.
+            </div>
+          </div>
+        </li>
+      </ul>
 
-				
+      <!-- Form -->
+      <h2 id="apply" class="mt-3 mb-2 troy-header">
+        Interested in Applying to TROY?
+      </h2>
+      <hr />
+      <div class="row">
+        <p class="col-10 offset-1 intro-p">
+          Thank you for your interest in the opportunities that TROY has waiting
+          for you. Qualified applicants are encouraged to apply to the Troy
+          University location of their choosing, including full degree
+          completion online. Applicants should be aware that TROY operates on a
+          number of campuses and sites so it is important that you are specific
+          when indicating your choice of a location. Select the category below
+          that best fits you.
+        </p>
+      </div>
+      <form class="mx-auto container" id="applyForm">
+        <div class="row">
+          <div class="col-4 offset-1">First Name:</div>
+          <div class="col-4 offset-1">Last Name:</div>
+          <div class="col-1"></div>
+        </div>
+        <div class="row">
+          <input type="text" name="" id="" class="col-4 offset-1" />
+          <input type="text" name="" id="" class="col-5 offset-1" />
+        </div>
+        <!-- Email -->
+        <div class="row">
+          <div class="col-11 offset-1">Email</div>
+        </div>
+        <div class="row">
+          <input type="text" name="" id="" class="col-10 offset-1" />
+        </div>
+        <!-- Address -->
+        <div class="row">
+          <div class="col-11 offset-1">Address</div>
+        </div>
+        <div class="row">
+          <input type="text" name="" id="" class="col-10 offset-1" />
+        </div>
+        <!-- City Zipcode  -->
+        <div class="row">
+          <div class="col-3 offset-1">City:</div>
+          <div class="col-3 offset-1">State:</div>
+          <div class="col-3 offset-1">Zip Code:</div>
+        </div>
+        <div class="row">
+          <input type="text" name="" id="" class="col-3 offset-1" />
+          <input type="text" name="" id="" class="col-3 offset-1" />
+          <input type="text" name="" id="" class="col-2 offset-1" />
+        </div>
+        <!-- Area of interest -->
+        <div class="row">
+          <div class="col-3 offset-1">Interest Area:</div>
+        </div>
+        <div class="row">
+          <div class="col-10 offset-1">
+            <select name="cars" id="cars">
+              <option value="Troy">Troy</option>
+              <option value="Mongomery">Mongomery</option>
+              <option value="Atlanta">Atlanta</option>
+              <option value="NewYork">New York</option>
+              <option disabled value="audi">
+                ------------------------------------
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <button
+            id="submitButton"
+            type="button"
+            class="col-4 offset-4 btn btn-primary btn-lg"
+          >
+            Apply
+          </button>
+        </div>
+      </form>
 
-			</ul>
+      <!-- About us -->
+      <h1 id="abtus" class="mt-3 mb-2 troy-header">About us</h1>
+      <hr />
+      <div class="row">
+        <div class="about-us col-sm-12 col-md-6 box-shadow">
+          <div class="email-me">
+            <button
+              id="email-btn"
+              class="btn btn-primary btn-block col-4 mx-auto offset-2"
+              style="margin-top: 30%"
+            >
+              Email Me
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-5 col-lg-5 offset-1"
+          id="about-us-p"
+        >
+          <h4 class="mb-3 mt-1">What is Computer Science Program</h4>
+          <p>
+            The Computer Science program provides students with a curriculum in
+            the MSCS key domains of Computer Science at the undergraduate and
+            graduate levels.
+          </p>
+          <p>
+            The undergraduate program gives students the full breadth of
+            undergraduate computer science knowledge and skills while preparing
+            them for careers in computer technology and for advanced study in
+            graduate education.
+          </p>
+          <h4 class="mb-3 mt-3">Why Choose Computer Science</h4>
+          <p>
+            The enormous growth of current and emerging technologies has
+            generated a need for graduates with Computer Science degrees.
+            Students graduating from Troy University's undergraduate and
+            graduate programs are prepared to work in a wide range of computing
+            careers, including software engineers, system analysts, computer
+            system designers, or computer programmers
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<!-- Form -->
-			<h2 id="apply" class="mt-3 mb-2 troy-header">Interested in Applying to TROY?</h2>
-			<hr>
-			<div class="row">
-				<p class="col-10 offset-1 intro-p">Thank you for your interest in the opportunities that TROY has waiting for you. Qualified applicants are encouraged to apply to the Troy University location of their choosing, including full degree completion online. Applicants should be aware that TROY operates on a number of campuses and sites so it is important that you are specific when indicating your choice of a location. Select the category below that best fits you.</p>
-			</div>
-			<form class="mx-auto container" id="applyForm">
-				<div class="row">
-					<div class="col-4 offset-1">First Name:</div>
-					<div class="col-4 offset-1">Last Name:</div>
-					<div class="col-1"></div>
-				</div>
-				<div class="row">
-					<input type="text" name="" id="" class="col-4 offset-1">
-					<input type="text" name="" id="" class="col-5 offset-1">
-				</div>
-				<!-- Email -->
-				<div class="row">
-					<div class="col-11 offset-1">Email</div>
-				</div>
-				<div class="row">
-					<input type="text" name="" id="" class="col-10 offset-1">
-				</div>
-				<!-- Address -->
-				<div class="row">
-					<div class="col-11 offset-1">Address</div>
-				</div>
-				<div class="row">
-					<input type="text" name="" id="" class="col-10 offset-1">
-				</div>
-				<!-- City Zipcode  -->
-				<div class="row">
-					<div class="col-3 offset-1">City:</div>
-					<div class="col-3 offset-1">State:</div>
-					<div class="col-3 offset-1">Zip Code:</div>
-				</div>
-				<div class="row">
-					<input type="text" name="" id="" class="col-3 offset-1">
-					<input type="text" name="" id="" class="col-3 offset-1">
-					<input type="text" name="" id="" class="col-2 offset-1">
-				</div>
-				<!-- Area of interest -->
-				<div class="row">
-					<div class="col-3 offset-1">Interest Area:</div>
-				</div>
-				<div class="row">
-					<div class="col-10 offset-1">
-						<select name="cars" id="cars">
-						<option value="Troy">Troy</option>
-						<option value="Mongomery">Mongomery</option>
-						<option value="Atlanta">Atlanta</option>
-						<option value="NewYork">New York</option>
-						<option disabled value="audi">------------------------------------</option>
-					</select>			
-				</div>
-				</div>
-				<div class="row mt-2">
-					<button id="submitButton" type="button" class="col-4 offset-4 btn btn-primary btn-lg ">
-						Apply</button>
-				</div>
-			</form>
-
-			<!-- About us -->
-			<h1 id="abtus" class="mt-3 mb-2 troy-header">About us</h1>
-			<hr>
-			<!--<div class="row">
-				<p class="col-10 offset-1 intro-p mb-2">From award-winning academic opportunities to exciting Division I athletics events, Troy University provides students around the globe with top-notch learning opportunities—in class and online. For 15 consecutive years, TROY has been named to The Princeton Review’s “Best in the Southeast” list.</p>
-			</div>-->
-			<div class="row">
-				<div class="about-us col-sm-12 col-md-6 box-shadow">
-					<div class="email-me">
-						<button id="email-btn" class="btn btn-primary btn-block col-4 mx-auto offset-2 " style="margin-top: 30%">Email Me</button>
-					</div>
-				</div>
-				<div class="col-12 col-sm-12 col-md-5 col-lg-5 offset-1" id="about-us-p">
-					<h4 class="mb-3 mt-1">What is Computer Science Program</h4>
-					<p >The Computer Science program provides students with a curriculum in the MSCS key domains of Computer Science at the undergraduate and graduate levels.  </p>
-					<p>The undergraduate program gives students the full breadth of undergraduate computer science knowledge and skills while preparing them for careers in computer technology and for advanced study in graduate education.</p>
-					<h4 class="mb-3 mt-3">Why Choose Computer Science</h4>
-					<p>The enormous growth of current and emerging technologies has generated a need for graduates with Computer Science degrees. Students graduating from Troy University's undergraduate and graduate programs are prepared to work in a wide range of computing careers, including software engineers, system analysts, computer system designers, or computer programmers</p>
-				</div>
-			</div>
-			
-
+    <!-- Footer -->
+    <footer>
+      <div class="footer pl-2">
+        This website is created By Bao Tran and licensed by the MIT
+      </div>
+    </footer>
   </body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		let listItems = ["cs2250", "cs2255", "cs3310", "cs3330" , "cs3331", "cs3332", "cs3333", "cs3360", "cs3365", "cs3370", "cs3372", "cs4420", "cs4445", "cs4443", "cs4448"];
-		let listItemsId = [];
-		listItems.forEach(function(element) {
-			listItemsId.push("#"+element);
-		})
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    let listItems = [
+      "cs2250",
+      "cs2255",
+      "cs3310",
+      "cs3330",
+      "cs3331",
+      "cs3332",
+      "cs3333",
+      "cs3360",
+      "cs3365",
+      "cs3370",
+      "cs3372",
+      "cs4420",
+      "cs4445",
+      "cs4443",
+      "cs4448",
+    ];
+    let listItemsId = [];
+    listItems.forEach(function (element) {
+      listItemsId.push("#" + element);
+    });
 
-		$(document).ready(function() {
-			// Hide all the courses
-			listItemsId.forEach(function(element) {
-				var itemId = element + "Content";
-				$(itemId).hide();
-			})
-		})
+    $(document).ready(function () {
+      // Hide all the courses
+      listItemsId.forEach(function (element) {
+        var itemId = element + "Content";
+        $(itemId).hide();
+      });
+    });
 
-		// Add click event that toggle the clicked course content
-		listItemsId.forEach(function(element) {
-			$(element).click(function() {
-				var contentId = element + "Content";
-				$(contentId).slideToggle("slow");
-			})
+    // Add click event that toggle the clicked course content
+    listItemsId.forEach(function (element) {
+      $(element).click(function () {
+        var contentId = element + "Content";
+        $(contentId).slideToggle("slow");
+      });
 
-			$("#table").hide();
-		})
+      $("#table").hide();
+    });
 
-		$("#meetBtn").click(function() {
-				$("#table").slideToggle(300);
-			})
-		
-		$("#submitButton").click(function() {
-			let mesg = " Thank you for your submission\n Your Profile will be reviewed by the Troy Addmission Department";
-			alert(mesg)
-		})
+    $("#meetBtn").click(function () {
+      $("#table").slideToggle(300);
+    });
 
-		$("#email-btn").click(function() {
-			window.location.href = "mailto:emailhelp@troy.edu.com?subject=Subject&body=I%Want%ToSubScribe"; 
-		})
+    $("#submitButton").click(function () {
+      let mesg =
+        " Thank you for your submission\n Your Profile will be reviewed by the Troy Addmission Department";
+      alert(mesg);
+    });
 
-	</script>
+    $("#email-btn").click(function () {
+      window.location.href =
+        "mailto:emailhelp@troy.edu.com?subject=Subject&body=I%Want%ToSubScribe";
+    });
+  </script>
 </html>
